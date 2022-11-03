@@ -1,5 +1,5 @@
 # getting-cleaning-data-project
-The final course project for "Getting and Cleaning Data" on Coursera. The goal of this project is to download a dataset, perform some processing steps on it, and return a tidy dataset.
+This is the final course project for "Getting and Cleaning Data" on Coursera. The goal of this project is to download a dataset, perform some processing steps on it, and return a tidy dataset.
 
 CodeBook.md describes the dataset, the processing that was performed on it, and the variable names.
 
