@@ -71,3 +71,5 @@ rm(activities)
 averaged_df <- mean_std_df %>%
   group_by(Activity,Subject) %>%
   summarize_all(mean)
+
+write.table(averaged_df,file="tidy_data_frame.txt",row.name=FALSE)
