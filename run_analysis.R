@@ -65,7 +65,11 @@ colnames(mean_std_df)[1] = "Activity" # rename V2 to Activity
 rm(activities)
 
 ## 4. Label the data set with descriptive variable names
-# This was already completed in step 2.
+names(mean_std_df) <- gsub("^t","Time",names(mean_std_df))
+names(mean_std_df) <- gsub("^f","Freq",names(mean_std_df))
+names(mean_std_df) <- gsub("mean","Mean",names(mean_std_df))
+names(mean_std_df) <- gsub("std","STD",names(mean_std_df))
+names(mean_std_df) <- gsub("\\()","",names(mean_std_df))
 
 ## 5. Create a tidy dataset with the average over each variable and each subject
 averaged_df <- mean_std_df %>%
